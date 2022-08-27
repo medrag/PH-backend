@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    image: postgres:12.2
+    restart: always
+    environment:
+      - POSTGRES_USER=mohamed
+      - POSTGRES_PASSWORD=Alt22032022!
+      - POSTGRES_DB=pizza_hut_rh
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
