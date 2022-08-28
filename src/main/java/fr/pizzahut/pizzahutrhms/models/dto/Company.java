@@ -1,0 +1,17 @@
+package fr.pizzahut.pizzahutrhms.models.dto;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Company {
+    private Long id;
+    private String nom;
+    private String numSiret;
+    private String adresse;
+}
