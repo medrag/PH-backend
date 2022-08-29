@@ -15,6 +15,10 @@ spring:
             non_contextual_creation: true
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
+  jackson:
+    deserialization:
+      accept-empty-string-as-null-object: true
+
 
 server:
   port: 8082
