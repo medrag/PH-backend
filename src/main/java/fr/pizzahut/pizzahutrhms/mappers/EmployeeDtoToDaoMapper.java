@@ -12,7 +12,6 @@ public abstract class EmployeeDtoToDaoMapper {
 
     @Mapping(target = "jrsSemaine", ignore = true)
     @Mapping(target = "piecesJointes", ignore = true)
-    @Mapping(target = "company", expression = "java(employee.company.isEmpty() ? null : employee.company)")
     public abstract EmployeeDao dtoToDao(Employee employee);
 
     @AfterMapping
