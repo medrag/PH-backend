@@ -12,7 +12,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://ph-rh-frontend.herokuapp.com", "http://localhost:4200")
+                .allowedOrigins("https://ph-rh-frontend.herokuapp.com", "http://ph-rh-frontend.herokuapp.com", "http://localhost:4200")
                 .allowedMethods("*")
                 .maxAge(3600L)
                 .allowedHeaders("*")
